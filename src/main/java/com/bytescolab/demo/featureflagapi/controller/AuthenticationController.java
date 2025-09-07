@@ -1,5 +1,9 @@
-package com.bytescolab.demo.featureflagapi.auth;
+package com.bytescolab.demo.featureflagapi.controller;
 
+import com.bytescolab.demo.featureflagapi.auth.AuthenticationRequest;
+import com.bytescolab.demo.featureflagapi.auth.AuthenticationResponse;
+import com.bytescolab.demo.featureflagapi.auth.AuthenticationService;
+import com.bytescolab.demo.featureflagapi.auth.RegisterRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

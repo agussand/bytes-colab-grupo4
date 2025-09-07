@@ -3,7 +3,7 @@ package com.bytescolab.demo.featureflagapi.auth;
 import com.bytescolab.demo.featureflagapi.configAuth.JwtService;
 import com.bytescolab.demo.featureflagapi.model.Role;
 import com.bytescolab.demo.featureflagapi.model.User;
-import com.bytescolab.demo.featureflagapi.model.UserRepository;
+import com.bytescolab.demo.featureflagapi.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
