@@ -18,6 +18,12 @@ public class FeatureServiceImpl implements FeatureService {
 
     @Override
     public Feature save(FeaturePOSTDTO newFeature) {
-        return new Feature(1L, "name", "description", true, new ArrayList<FeatureConfig>());
+        Feature feature = new Feature();
+        feature.setName(newFeature.getName());
+        feature.setDescription(newFeature.getDescription());
+        feature.setEnabledByDefault(newFeature.getEnabledByDefault());
+        return featureRepository.save(feature);
     }
+
+
 }

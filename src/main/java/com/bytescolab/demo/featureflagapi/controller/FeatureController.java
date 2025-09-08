@@ -21,8 +21,7 @@ public class FeatureController {
 
     @PostMapping
     public ResponseEntity<Feature> save(
-            @Valid @RequestBody FeaturePOSTDTO newFeature
-            ){
+            @Valid @RequestBody FeaturePOSTDTO newFeature){
         return ResponseEntity.ok(featureService.save(newFeature));
     }
 }
