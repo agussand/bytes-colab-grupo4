@@ -1,6 +1,6 @@
 package com.bytescolab.demo.featureflagapi.configAuth;
 
-import com.bytescolab.demo.featureflagapi.model.UserRepository;
+import com.bytescolab.demo.featureflagapi.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

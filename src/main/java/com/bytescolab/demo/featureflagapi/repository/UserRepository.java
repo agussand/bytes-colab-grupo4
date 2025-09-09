@@ -1,5 +1,6 @@
-package com.bytescolab.demo.featureflagapi.model;
+package com.bytescolab.demo.featureflagapi.repository;
 
+import com.bytescolab.demo.featureflagapi.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
