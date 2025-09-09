@@ -16,8 +16,11 @@ public class FeatureConfig {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "feature_id", nullable = false)
+    @JoinColumn(name = "feature_id", nullable = false, updatable = false, insertable = false)
     private Feature feature;
+
+    @Column(name = "feature_id")
+    private Long featureId;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
